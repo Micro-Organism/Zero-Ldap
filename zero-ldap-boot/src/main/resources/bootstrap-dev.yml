@@ -1,0 +1,9 @@
+spring:
+    application:
+        name: zero-ldap-boot
+    # ldap configuration
+    ldap:
+        urls: ldap://127.0.0.1:8389
+        base: dc=example,dc=org
+        username: cn=admin,${spring.ldap.base}
+        password: admin
